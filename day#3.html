@@ -11,18 +11,19 @@
         const area = prompt("Você gostaria de se especializar na área de front-end ou back-end ?");
 
         if (area == "front-end") {
-            const respostaarea = prompt("Você busca aprender React ou vue ?")
+            const aprendendizado = prompt("Você busca aprender React ou vue ?");
         } else {
-            const respostaarea = prompt("Você busca aprender C# ou Java ?");
+            const aprendendizado = prompt("Você busca aprender C# ou Java ?");
         };
-        const pergunta = prompt("Bacana, você gostaria de seguir se especializando em "+area+" ou seguir estudnado para se tornar fullstack");
 
+        const mensagem = prompt("Você quer seguir se especializando em "+area+" ou seguir se desenvolvendo para se tornar fullstack ?");
 
-
-
-
-
-
+        let msg = prompt("Existe outra linguagem que você gostaria de aprender ?Digite 'ok' caso sim.");
+        while (msg == "ok") {
+            let novaTecnologia = prompt("Qual?");
+            alert (`${novaTecnologia} é muito legal !`);
+            msg = prompt("Tem mais alguma tecnologia que você tem interesse ?Digite 'ok' em caso positivo.");
+        }
 
     </script>
 </body>
